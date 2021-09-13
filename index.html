@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WeatherApp</title>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/icon type" />
+  </head>
+  <body >
+    <div class=" h-100 d-flex justify-content-end align-items-start me-2 mt-2">
+        <button id="convertValue" type="button" class="btn btn-primary" onclick="convertTemperature()" value="f" style="visibility: hidden;">Convert to Fahrenheit</button>
+      </div>
+    <div class="h-100 d-flex flex-column justify-content-start align-items-center mt-5 mb-3">
+      <h1>Welcome to weather App</h1>
+      <div class="col-11 col-sm-9 col-md-7 col-md-lg-5 col-xl-3">
+        <input type="text" class="form-control" placeholder="Enter your city..." onchange="getWeatherDataFromApi(this.value)"/>
+      </div>
+      <div id="weatherInfo" class="container col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 text-center">
+        
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

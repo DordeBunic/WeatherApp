@@ -1,0 +1,23 @@
+.bigFont{
+    font-size: 75px;
+    font-weight: 300;
+}
+.container{
+    border-radius: 25px;
+}
+body{
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    background-attachment: fixed;
+}
+.container{
+    border-radius: 25px;
+    background-color: hsla(0, 0%, 100%, 0.15);  
+    backdrop-filter: blur(15px);
+}
+input[type="text"] {
+    border-radius: 25px;
+    padding: 8px 20px;
+    margin: 8px 0;
+    user-select: auto;
+    outline: none;
+  }
